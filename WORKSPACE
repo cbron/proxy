@@ -34,13 +34,13 @@ bind(
     actual = "//external:ssl",
 )
 
-# 1. Determine SHA256 `wget https://github.com/istio/envoy/archive/$COMMIT.tar.gz && sha256sum $COMMIT.tar.gz`
+# 1. Determine SHA256 `wget https://github.com/cbron/envoy/archive/$COMMIT.tar.gz && sha256sum $COMMIT.tar.gz`
 # 2. Update .bazelrc and .bazelversion files.
 #
 # envoy commit date: 06/11/2020
 ENVOY_SHA = "5c6a808ebdc0d217697adbb2e9594ec115e1e173"
 
-ENVOY_SHA256 = "09468be38f3475a6025b7d2718220eca2daac323366676769db549267c47c970"
+ENVOY_SHA256 = "c6ece8b9e06a8a5b4e0a778fb4081e15224234579b02ecb0cc4b8ad3ebb350a0"
 
 # To override with local envoy, just pass `--override_repository=envoy=/PATH/TO/ENVOY` to Bazel or
 # persist the option in `user.bazelrc`.
